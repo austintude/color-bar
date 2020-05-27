@@ -1,14 +1,14 @@
 {
   "theme": {
-      "slug": "wimberleyvalleyradio",
-      "name": "Wimberley Valley Radio",
+      "slug": "color-bar",
+      "name": "Color-Bar",
       "author": "Daniel Bisett",
       "PHPNamespace": "WP_Rig\\WP_Rig"
     },
     "dev": {
       "browserSync": {
         "live": true,
-        "proxyURL": "kwvh.local",
+        "proxyURL": "colorbar.local",
         "bypassPort": "8181",
         "https": false
       }

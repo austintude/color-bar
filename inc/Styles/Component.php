@@ -357,10 +357,9 @@ class Component implements Component_Interface, Templating_Component_Interface {
 		}
 
 		$google_fonts = [
+			'Sulphur Point' => [ '300', '400', '700' ],
+			'Sacramento'     => [ ],
 			'Roboto Condensed' => [ '400', '400i', '700', '700i' ],
-			'Crimson Text'     => [ '400', '400i', '600', '600i' ],
-			'Oswald'	   => [ '400', '400i', '700', '700i' ],
-			'Sigmar One'	   => [ '400' ],
 
 		];
 

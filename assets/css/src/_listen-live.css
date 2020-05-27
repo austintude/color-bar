@@ -6,13 +6,13 @@
 	margin-top: 0;
 	& a {
 		display: grid;
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 1fr;
 		z-index: 10;
 
 		& span {
 			z-index: 10;
 			font-size: 1rem;
-			text-align: right;
+			text-align: left;
 			@media (--sidebar-query) {
 				font-size: 1.4rem;
 			}
@@ -26,7 +26,7 @@
 	@media (--content-query) {
 	position: absolute;
 	top: 0rem;
-	left: -7rem;
+	left: -4rem;
 	}
 }
 

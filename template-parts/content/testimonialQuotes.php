@@ -6,35 +6,47 @@
  */
 
 namespace WP_Rig\WP_Rig;
-$testimonial_quotes				= get_field('testimonial_quotes');
-$testimonials_block_title			= get_field('testimonials_block_title');
+
+$testimonial_block_title = get_field('testimonial_block_title');
+$testimonial_block_background_image = get_field('testimonial_block_background_image');
 // insert acf repeater here
 
 ?>
+<?php $loop = new \WP_Query( array( 'post_type' => 'testimonials', 'orderby' => 'post_id', 'order' => 'ASC' ) ); ?>
 
 <section id="testimonialsBlock">
-    <div class="testimonialsBlockTitle">
-    <h2><?php echo $testimonials_block_title; ?></h2>
+	<div class="testimonialBlockBackground">
+		<img src="<?php echo $testimonial_block_background_image['url']; ?>" alt="<?php echo $testimonial_block_background_image['alt']; ?>">
+</div> <!-- end .testimonialBlockBackground -->
+		<div class="testimonialsBlockTitle">
+    <h2><?php echo $testimonial_block_title; ?></h2>
+
 </div>
     <ol class="testimonialsList testimonialsList">
         <!-- insert acf sub-repeater here -->
-
-  <?php while (have_rows('testimonial_quotes')) : the_row();
-
-// vars
-$testimonial_quote = get_sub_field('testimonial_quote');
-$testimonial_author = get_sub_field('testimonial_author');
-$description_of_work = get_sub_field('description_of_work');
-$testimonial_date = get_sub_field('testimonial_date');
-$overall = get_sub_field('overall');
+		<amp-carousel height="600"
+		width="1200"
+		layout="responsive"
+		type="slides"
+		autoplay
+		delay="9500">
+		<?php while( $loop->have_posts() ) : $loop->the_post();
+$testimonial_quote = get_field('testimonial_quote');
+$testimonial_author = get_field('testimonial_author');
+$description_of_work = get_field('description_of_work');
+$testimonial_date = get_field('testimonial_date');
+$overall = get_field('overall');
+$author_image = get_field('author_image');
 ?>
             <li>
             <blockquote class="blockquote testimonialsCard" itemscope itemtype="http://schema.org/Review">
                 <div class="testimonialsContent">
-                    <span itemprop="itemReviewed" itemtype="http://schema.org/localBusiness">
-                    <p itemprop="reviewBody">
-                      <?php echo $testimonial_quote; ?>
-                    </p>
+				<amp-fit-text width="500" height="200" layout="responsive">
+				<span itemprop="itemReviewed" itemtype="http://schema.org/localBusiness">
+                    <div itemprop="reviewBody">
+
+					  <?php echo $testimonial_quote; ?>
+                    </div>
 </span>
                     <?php if ($overall != null) { ?>
                     <div class="testimonialContentBlocks">
@@ -66,16 +78,20 @@ $overall = get_sub_field('overall');
                         </div>
                     </div>
                     <?php } ?>
-                </div>
+				</div>
+					</amp-fit-text>
 
                 <cite class="testimonialsQuote">
                     <span itemprop="author" itemscope itemtype="http://schema.org/Person">
                     <?php echo $testimonial_author; ?>
-                    </span> -
-                    <meta itemprop="datePublished" content="<?php echo $testimonial_date; ?>">
+					</span> -
+					<div class="authorImg">
+					<img src="<?php echo $author_image['url']; ?>" alt="<?php echo $author_image['alt']; ?>">
+					</div>
+					<!-- <meta itemprop="datePublished" content="<?php echo $testimonial_date; ?>">
                     <span class="testimonialDate">
                         <?php echo $testimonial_date; ?>
-                    </span>
+                    </span> -->
 
                 </cite>
 
@@ -83,7 +99,8 @@ $overall = get_sub_field('overall');
 
 
             </li>
-            <?php endwhile; ?>
 
+			<?php endwhile; wp_reset_query(); ?>
+			</amp-carousel>
     </ol>
 </section>

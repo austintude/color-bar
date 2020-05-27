@@ -230,7 +230,7 @@ select {
 	font-family: var(--highlight-font-family);
 	font-stretch: condensed;
 	font-size: 80%;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	border: 2px solid #fff;
 	border-radius: 0;
 	background: transparent;
@@ -366,7 +366,7 @@ select {
 .main-navigation a {
 	display: block;
 	width: 100%;
-	padding: 0.5em 1em 0.5em 0;
+	padding: 0.4em 1em 0.4em 0;
 	text-decoration: none;
 	color: #fff;
 }
@@ -379,7 +379,7 @@ select {
 		content: "";
 		display: block;
 		height: 4px;
-		background: linear-gradient(90deg,#e5af4e,#e5af4e,#e5af4e,#000);
+		background: linear-gradient(90deg,#1EC4D9,#1EC4D9,#1EC4D9, #582B7E,#582B7E);
 	}
 }
 

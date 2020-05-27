@@ -54,7 +54,7 @@ if ( ! wp_rig()->is_primary_nav_menu_active() ) {
 		<?php $listenliveloop = new \WP_Query( array( 'post_type' => 'listen_live', 'orderby' => 'post_id', 'order' => 'ASC' ) ); ?>
 
 <?php while( $listenliveloop->have_posts() ) : $listenliveloop->the_post();
-$listen_live_icon			= get_field('listen_live_icon');
+$listen_live_tx			= get_field('listen_live_tx');
 $listen_live_link			= get_field('listen_live_link');
 
 			?>
@@ -63,7 +63,7 @@ $listen_live_link			= get_field('listen_live_link');
 
 		<a href="<?php echo $listen_live_link; ?>" target="_blank" rel="noreferrer">
 		<span>
-		Listen Live
+		<?php echo $listen_live_tx; ?>
 		</span>
 		<img src="<?php echo $listen_live_icon['url']; ?>" alt="<?php echo $listen_live_icon['alt']; ?>"/>
 	</a>

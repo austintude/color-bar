@@ -7,10 +7,11 @@
 
 :root {
 	--global-font-color: #333;
-	--global-font-family: "Helvetica Neue", sans-serif;
+	--global-font-family: "Sulphur Point", sans-serif;
 	--global-font-size: 20;
 	--global-font-line-height: 1.4;
-	--highlight-font-family: "Roboto Condensed", "Helvetica Neue", "Arial Narrow", sans-serif;
+	--highlight-font-family: "Sacramento", cursive;
+	--secondary-font-family: "Roboto Condensed", sans-serif;
 	--content-width: 45rem;
 	--dropdown-symbol-width: 0.7em;
 
