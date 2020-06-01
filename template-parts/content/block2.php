@@ -9,7 +9,6 @@ namespace WP_Rig\WP_Rig;
 
 ?>
 <section class="block2">
-	<?php
-		get_template_part( 'template-parts/content/programs' );
-	?>
+	<h2>Under Construction</h2>
+	<h4>Check back soon!</h4>
 </section> <!-- end .block2 -->

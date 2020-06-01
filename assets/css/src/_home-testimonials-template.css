@@ -2,10 +2,15 @@
     left: 0;
 
     & #testimonialsBlock {
-		margin-top: 5rem;
+		margin-top: 0;
 		display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 6fr 1fr;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	height: 51rem;
+	@media (--content-query) {
+	grid-template-rows: 10rem 1fr 10rem;
+	height: 60rem;
+	}
         /* min-height: 15rem;
 		max-height: 30rem; */
 		/* height: 35rem; */
@@ -17,9 +22,12 @@
 
 		& .testimonialBlockBackground {
 			grid-column: 1/1;
-			grid-row: 1/4;
+			grid-row: 1;
 			z-index: 1;
 			display: grid;
+			@media (--content-query) {
+				grid-row: 1/4;
+			}
 & img {
     opacity: .4;
 }
@@ -51,9 +59,10 @@
 			grid-template-columns: 1fr;
 			display: grid;
     grid-column: 1;
-    grid-row: 2/6;
+    grid-row: 1;
 	z-index: 3;
 	@media (--content-query) {
+		grid-row: 1/3;
 		grid-template-columns: 1fr 4fr 1fr;
 	}
 	& amp-carousel {
@@ -65,14 +74,19 @@
 		/* min-height: 26rem; */
 		/* height: 100%; */
 		/* max-height: 103rem; */
-		height: 43rem;
+		height: 45rem;
+		margin-top:8rem;
+		@media (--content-query) {
+			/* margin-top: 0; */
+			height: 49rem;
+		}
 }
 & .amp-carousel-button {
     position: relative;
     box-sizing: border-box;
     height: 34px;
     width: 34px;
-	margin: 18rem 5rem 0 2rem;
+	margin: 3rem 0rem 0 0rem;
 	border-style: none;
 	width: 3rem;
 	height: 3rem;
@@ -221,12 +235,34 @@
             background-color: rgba(250,250,250,.7);
 			color: #000;
 			font-weight: 300;
-            padding: 2em;
+            padding: 1em;
             margin: 0 0 1rem 0;
             transition: box-shadow 0.2s ease-in-out;
 			position: relative;
-			width: 60vw;
-			height: 30rem;
+			width: 83vw;
+			height: 33rem;
+			display: grid;
+
+			@media (--content-query) {
+				padding: 2em;
+				width: 60vw;
+			}
+
+			& amp-fit-text {
+				display: grid;
+				/* grid-row: 1/4; */
+				grid-template-rows: 5fr 1fr;
+
+				& .reviewBody {
+					/* display: grid; */
+					grid-row: 1/5;
+				}
+				& .testimonialContentBlocks {
+					/* display: grid; */
+					grid-row: 5/6;
+				}
+
+			}
         }
 
         & .blockquote p:before {
@@ -295,9 +331,11 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
         grid-gap: 1rem;
-        margin-top: 3rem;
+        margin-top: 7rem;
         color: #333;
-
+		@media (--content-query) {
+			margin-top: 3rem;
+		}
         & .leftBlock {
             & h4 {
                 font-size: 1rem;
@@ -377,6 +415,7 @@
         top: 0.25em;
     }
 }
+
 
 @media (--ipad-landscape-menu-query) {
     .home {

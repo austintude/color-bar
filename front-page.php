@@ -25,7 +25,9 @@ if ( is_home() ) {
 	<?php $miscblockloop = new \WP_Query( array( 'post_type' => 'miscblockloop', 'orderby' => 'post_id', 'order' => 'ASC' ) ); ?>
 
 
-
+	<?php
+			get_template_part( 'template-parts/content/block2' );
+		?>
 		<?php
 			get_template_part( 'template-parts/content/block3a' );
 		?>

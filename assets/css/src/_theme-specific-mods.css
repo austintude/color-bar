@@ -502,7 +502,7 @@ amp-carousel,
 } */
 
 .site-branding {
-	padding-top: 4rem;
+	padding-top: 0;
 	padding-bottom: 0;
 
 	& .site-title {
@@ -711,5 +711,23 @@ justify-self: center;
 	& .preBlock {
 		width: 70vw;
 		margin: auto auto -4rem;
+	}
+}
+/* Mods for Color-Bar Begin */
+.home .testimonialsCard .testimonialsContent amp-fit-text.mobile,
+.mobile {
+	display: block;
+	@media (--content-query) {
+		display: none;
+	}
+}
+.home .testimonialsCard .testimonialsContent amp-fit-text.smallDesktop,
+.smallDesktop {
+	display: none;
+	@media (--content-query) {
+		display: block;
+	}
+	@media (--wide-screen-query) {
+		display: none;
 	}
 }

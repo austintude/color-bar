@@ -3,9 +3,19 @@
 	flex-direction: column;
 	text-align: center;
 	/* background: rgba(0,0,0,.95); */
-	padding: 3rem 0;
+	padding: 0rem 0;
 	@media (--sidebar-query) {
-		margin-top: 10rem;
+		margin-top: 0rem;
 	}
 
+& h2 {
+	color: #fff;
+	font-family: var(--global-font-family);
+	font-size: 3rem;
+}
+& h4 {
+	color: #fff;
+	/* font-family: var(--global-font-family); */
+	font-size: 2.5rem;
+}
 }

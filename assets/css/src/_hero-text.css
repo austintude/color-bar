@@ -79,6 +79,7 @@ h1.callNumberBackground {
 	margin: 0rem 10vw;
     left: -5vw;
 	position: relative;
+	z-index: 4;
 	@media (--content-query) {
 		margin: 1rem 5vw;
 	}
