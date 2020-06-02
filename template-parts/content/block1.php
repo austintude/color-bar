@@ -10,7 +10,7 @@ namespace WP_Rig\WP_Rig;
 ?>
 <section class="block1">
 	<?php
-		get_template_part( 'template-parts/content/GridCardWrapper' );
+		get_template_part( 'template-parts/content/ourStaff' );
 	?>
 
 </section> <!-- end .block1 -->

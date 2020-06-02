@@ -1,0 +1,62 @@
+.our_staff-template-default {
+	& .titleTagWrapper {
+		top: 5rem;
+	}
+	& article {
+		margin-bottom: 5rem;
+
+		& .ourStaffBlock {
+			display: grid;
+			grid-template-columns: 1fr;
+			margin: 1rem 2vw;
+			text-align: center;
+			grid-gap: 2rem;
+			color: #fff;
+			@media (--content-query) {
+				margin: 1rem 10vw;
+				grid-template-columns: 1fr 1fr;
+			}
+			& h1 {
+				font-size: 4rem;
+			}
+			& h3 {
+				font-family: var(--global-font-family);
+			}
+		}
+		& button {
+			background: linear-gradient(22deg,hsl(273, 49%, 33%), hsl(273, 49%, 33%), hsl(187, 76%, 48%), hsl(187, 76%, 48%), hsl(187, 76%, 48%));
+		}
+	}
+}
+
+
+	 .sectionCard {
+		display: grid;
+grid-template-columns: 1fr;
+text-align: left;
+		& button {
+			background: rgb(48, 58, 63);
+		}
+		& h3 {
+			font-size: 1.2rem;
+			font-weight: 300;
+			text-align: center;
+		}
+
+		& p {
+			font-size: 1.1rem;
+		}
+		@media (--wide-screen-query) {
+		align-self: stretch;
+		}
+		@media (--content-query) {
+			grid-template-columns: 1fr 1fr;
+
+		}
+		& .staffInfo {
+			padding: 0 1rem;
+		}
+	}
+
+
+

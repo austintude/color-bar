@@ -2,11 +2,13 @@
     display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 	grid-template-rows: 438px;
-    grid-gap: 3rem;
+    grid-gap: 1rem;
     margin-left: auto;
     margin-right: auto;
 	width: 90vw;
-
+	@media (--content-query) {
+		grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+	}
 	& .gridCardLoop {
 		padding: 1rem;
 		border-radius: 1rem;
@@ -47,14 +49,23 @@
 
 			& .gridCardItem {
 				font-size: 2rem;
-				text-transform: uppercase;
+				/* text-transform: uppercase; */
     display: grid;
-    /* height: 95px; */
+	/* height: 95px; */
+	& h2 {
+		font-size: 2rem;
+	}
+
 			}
 
 			& .gridCardDesc {
-				font-size: 1.3rem;
+				/* font-size: 1.3rem; */
 				display: none;
+				& h3,
+				& h5 {
+					font-size: 1rem;
+					font-family: var(--global-font-famimly);
+				}
 			}
 			& .gridCardItemLink {
 				border: 1px solid rgb(255,99,71);

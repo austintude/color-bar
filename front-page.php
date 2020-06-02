@@ -23,11 +23,13 @@ if ( is_home() ) {
 
 	<main id="primary" class="site-main">
 	<?php $miscblockloop = new \WP_Query( array( 'post_type' => 'miscblockloop', 'orderby' => 'post_id', 'order' => 'ASC' ) ); ?>
-
-
 	<?php
 			get_template_part( 'template-parts/content/block2' );
 		?>
+	<?php
+			get_template_part( 'template-parts/content/block1' );
+		?>
+
 		<?php
 			get_template_part( 'template-parts/content/block3a' );
 		?>
