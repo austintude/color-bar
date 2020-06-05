@@ -76,12 +76,18 @@ h1.callNumberBackground {
 .heroText {
 	display: grid;
     grid-template-columns: 1fr;
-	margin: 0rem 10vw;
-    left: -5vw;
+	margin: 0;
+    /* left: -5vw; */
 	position: relative;
 	z-index: 4;
+
 	@media (--content-query) {
-		margin: 1rem 5vw;
+		margin: 1rem 0;
+		text-align-last: justify;
+    justify-self: baseline;
+	}
+	h1 {
+		margin: 0;
 	}
 }
 .heroButtons {

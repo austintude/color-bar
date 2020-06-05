@@ -24,9 +24,11 @@ namespace WP_Rig\WP_Rig;
 </div> -->
 
 <div class="titleTagWrapper">
+<div class="emptyDiv">
+</div><!-- /emptyDiv -->
 	<div class="heroText">
-	<!-- <img src="<?php echo $kwvh_logo['url']; ?>" alt="<?php echo $kwvh_logo['alt']; ?>"/> -->
-	<h1 class="site-title">
+	<p class="site-title"><?php bloginfo( 'name' ); ?></p>
+	<h1 class="site-desc staffName">
 		<?php the_title(); ?>
 	</h1>
 </div><!-- heroText -->
