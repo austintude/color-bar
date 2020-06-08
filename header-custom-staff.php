@@ -28,12 +28,10 @@ namespace WP_Rig\WP_Rig;
 	?>
 
 	<?php wp_head(); ?>
-	<!-- AMP Analytics --><script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
 </head>
 
 <body <?php body_class(); ?>>
 <!-- Google Tag Manager -->
-<amp-analytics config="https://www.googletagmanager.com/amp.json?id=GTM-KVBZPM6&gtm.url=SOURCE_URL" data-credentials="include"></amp-analytics>
 
 <?php wp_body_open(); ?>
 <div id="page" class="site">

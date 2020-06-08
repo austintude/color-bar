@@ -8,7 +8,7 @@
 		& .ourStaffBlock {
 			display: grid;
 			grid-template-columns: 1fr;
-			margin: 1rem 2vw;
+			margin: 1rem 5vw;
 			text-align: center;
 			grid-gap: 2rem;
 			color: #fff;

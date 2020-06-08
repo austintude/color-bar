@@ -6,7 +6,7 @@
 	background: rgba(0,0,0,.95);
 	padding: 2rem 0;
 	& h2 {
-		color: #f7f7f7;
+		color: #F2C996;
 	}
 	& .sectionCardsBlock {
 			/* grid-template-columns: repeat(auto-fit,minmax(90px,180px)); */
@@ -14,7 +14,7 @@
 		& .sectionCard {
 		background: transparent;
 		& h3 {
-			color: #999999;
+			color: #F2C996;
 		}
 	}
 }

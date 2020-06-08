@@ -34,6 +34,7 @@ namespace WP_Rig\WP_Rig;
 </div><!-- heroText -->
 
 
-
+</div>
 
 </div><!-- .site-branding -->
+

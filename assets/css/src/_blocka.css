@@ -44,7 +44,7 @@ section.covid19 {
 
 		& .blockContent {
 			display: grid;
-			color: #f7f7f7;
+			color: #F2C996;
 			@media (--content-query) {
 			grid-column: 2 / 4;
 			grid-row: 2 / 3;

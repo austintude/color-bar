@@ -16,15 +16,66 @@
 		background: #222;
 		/* color: #fff; */
 		& .heroText {
-			margin: 0 8vw;
+			margin: 0 auto;
 			@media (--content-query) {
 				margin: 1rem 0;
+			}
+		}
+		& .site-desc {
+			width: 80%;
+			margin: 0 auto;
+			@media (--content-query) {
+			width: 50%;
 			}
 		}
 	}
 	& .titleTagWrapper {
 		margin-top: 0;
 		top: 5rem;
+	}
+	& #masthead {
+		& main {
+			color: #F2C996;
+			width:96vw;
+			@media (--content-query) {
+				width:80vw;
+			}
+			& h2 {
+			font-family: var(--global-font-family);
+			text-transform: uppercase;
+			border-bottom: #F2C996 solid 1px;
+			width: fit-content;
+    margin-left: auto;
+	margin-right: auto;
+	font-size: 3rem;
+	@media (--content-query) {
+		font-size: 4rem;
+	}
+			}
+			& h3 {
+				font-family: var(--global-font-family);
+				/* text-transform: lowercase; */
+			}
+			& h4 {
+				font-family: var(--global-font-family);
+				text-transform: uppercase;
+			}
+		}
+		& .wp-block-table.is-style-stripes {
+			border-bottom: none;
+		}
+		& figure.wp-block-table {
+			background-color: rgba(0, 0, 0, .5);
+			& table {
+				margin: 0;
+
+					& td {
+						border-color: rgba(250, 250, 250, .2);
+						word-break: normal;
+					}
+
+			}
+		}
 	}
 	/* & .site-title {
 		font-size: 2.3rem;

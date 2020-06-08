@@ -9,12 +9,12 @@
 	}
 
 & h2 {
-	color: #fff;
+	color: #F2C996;
 	font-family: var(--global-font-family);
 	font-size: 3rem;
 }
 & h4 {
-	color: #fff;
+	color: #F2C996;
 	/* font-family: var(--global-font-family); */
 	font-size: 2.5rem;
 }

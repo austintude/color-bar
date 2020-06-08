@@ -80,7 +80,7 @@ h1.callNumberBackground {
     /* left: -5vw; */
 	position: relative;
 	z-index: 4;
-
+	/* background-color: #fff; */
 	@media (--content-query) {
 		margin: 1rem 0;
 		text-align-last: justify;

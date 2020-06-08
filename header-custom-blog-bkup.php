@@ -20,7 +20,6 @@ $tagline			= get_field('tagline');
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="preconnect" href="https://cdn.ampproject.org">
-	<!-- AMP Analytics --><script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
 
 
 	<?php
@@ -36,7 +35,6 @@ $tagline			= get_field('tagline');
 
 <body <?php body_class(); ?>>
 <!-- Google Tag Manager -->
-<amp-analytics config="https://www.googletagmanager.com/amp.json?id=GTM-NQRF8CC&gtm.url=SOURCE_URL" data-credentials="include"></amp-analytics>
 
 <?php wp_body_open(); ?>
 <div id="page" class="site">
