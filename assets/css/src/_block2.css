@@ -17,5 +17,7 @@
 	color: #F2C996;
 	/* font-family: var(--global-font-family); */
 	font-size: 2.5rem;
+	text-transform: uppercase;
+    font-family: var(--global-font-family);
 }
 }

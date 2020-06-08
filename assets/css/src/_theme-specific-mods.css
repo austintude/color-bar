@@ -160,7 +160,7 @@ section {
 	}
 }
 @media (--sidebar-query) {
-		margin-left: 5rem;
+		/* margin-left: 5rem; */
 }
 }
 .sectionDescription {
