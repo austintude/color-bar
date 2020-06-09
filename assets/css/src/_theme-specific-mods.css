@@ -287,12 +287,14 @@ figcaption {
 	display: grid;
 	margin: auto 2fr;
 	grid-template-rows: 1fr 60px;
-	color: #111;
+
 	& h4 {
 
 		text-transform: uppercase;
 		font-weight: 600;
 		font-size: 1rem;
+		color: #f2c996;
+    font-family: var(--global-font-family);
 	}
 	& h5 ,
 	& li,
@@ -300,8 +302,9 @@ figcaption {
 		font-size: 1rem;
 		line-height: 1rem;
 		font-weight: 400;
-		color: #111;
 		text-decoration: none;
+		color: #fff;
+    font-family: var(--global-font-family);
 	}
 
 	& ul {
@@ -365,7 +368,8 @@ figcaption {
 		display: grid;
 		grid-template-columns: 1fr;
 		grid-gap: 1.5rem;
-
+		text-align: left;
+		padding-left: 2rem;
 		& amp-img {
 
 			/* width: 100%; */
@@ -377,7 +381,7 @@ figcaption {
 			}
 		}
 		@media (--content-query) {
-			grid-template-columns: 1fr 1fr;
+			/* grid-template-columns: 1fr 1fr; */
 			/* max-height: 50rem; */
 			grid-gap: 0.5rem;
 		}
@@ -544,7 +548,7 @@ amp-carousel,
 		text-align: center;
 
 		@media (--content-query) {
-			width: 100%;
+			width: 80%;
 			grid-column: 2 / 3;
 		grid-row: 2 / 2;
 		font-size: 4rem;
@@ -684,8 +688,15 @@ justify-self: center;
 		max-width: 100vw;
 		}
 		& a {
-			color: #111;
+			color: #f2c996;
 			text-decoration: none;
+			text-shadow: 1px 1px 5px #fff;
+			font-size: 2rem;
+		}
+		& .builtBy a {
+			color: #222;
+			font-size: 1rem;
+			font-family: var(--highlight-font-family);
 		}
 	}
 	& #businessSocial {
@@ -698,8 +709,9 @@ justify-self: center;
 		}
 		& img {
 			margin: .3rem;
+			width: 19vw;
 			@media (--content-query) {
-			width: 4vw;
+			width: 6vw;
 		}
 	}
 	}

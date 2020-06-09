@@ -77,6 +77,26 @@ $contact_us_phone			= get_field('contact_us_phone');
 		<?php echo $station_status; ?>
 		</h5>
 </section>
+
+        <div id="googleMap">
+        <iframe width="600" height="450" layout="responsive"
+			  sandbox="allow-scripts allow-same-origin allow-popups"
+			  frameborder="0"
+              src="<?php echo $google_map; ?>">
+
+  </iframe>
+</div>
+</div>
+<div class="softBlock">
+
+</div>
+</div>
+<div class="middleBlock">
+	<div class="blockTitle">
+		<h4><?php bloginfo( 'name' ); ?></h4>
+</div>
+
+<div class="blockImages">
 <div id="phone">
 			<span property="telephone"><a href="tel:<?php echo $contact_us_phone_link; ?>"><?php echo $contact_us_phone; ?></a></span>
 		</div>
@@ -98,19 +118,14 @@ $contact_us_phone			= get_field('contact_us_phone');
 			</ul>
 
         </div>
-        <div id="googleMap">
-        <iframe width="600" height="450" layout="responsive"
-			  sandbox="allow-scripts allow-same-origin allow-popups"
-			  frameborder="0"
-              src="<?php echo $google_map; ?>">
 
-  </iframe>
 </div>
 </div>
-<div class="softBlock">
+<div class="rightBlock">
 <div class="blockTitle">
-		<h4>Join Us On Social Media</h4>
+		<h4>BRINGING "CITY MODERN" ... TO "A LITTLE SLICE OF HEAVEN"</h4>
 </div>
+<div class="blockImages">
 
 	<div id="businessSocial">
 		<div id="socialIcon1">
@@ -147,41 +162,6 @@ $contact_us_phone			= get_field('contact_us_phone');
 </a>
 		</div>
 </div>
-</div>
-</div>
-<div class="middleBlock">
-	<div class="blockTitle">
-		<h4><?php bloginfo( 'name' ); ?></h4>
-</div>
-
-<div class="blockImages">
-		<img
-		src="<?php echo $middle_image_1['url']; ?>"
-
-			lightbox
-			alt="<?php echo $middle_image_1['alt']; ?>">
-		<img
-		src="<?php echo $middle_image_2['url']; ?>"
-
-			lightbox
-			alt="<?php echo $middle_image_2['alt']; ?>">
-
-</div>
-</div>
-<div class="rightBlock">
-<div class="blockTitle">
-		<h4>Sharing Your Passion!</h4>
-</div>
-<div class="blockImages">
-
-		<img
-		src="<?php echo $right_image_1['url']; ?>"
-			lightbox
-			alt="<?php echo $right_image_1['alt']; ?>">
-		<img
-		src="<?php echo $right_image_2['url']; ?>"
-			lightbox
-			alt="<?php echo $right_image_2['alt']; ?>">
 
 </div>
 </div>
