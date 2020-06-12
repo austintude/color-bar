@@ -16,12 +16,12 @@
 	}
 }
 .secondLine {
-	color: #f7931e;
+	color: var(--global-font-color);
 	& button {
 		font-size:1.3rem;
-		background: #f7931e;
+		background: var(--global-font-color);
 		& a {
-			color: #f7f7f7;
+			color: var(--color-theme-off-white);
 			text-decoration: none;
 		}
 	}
@@ -33,7 +33,7 @@
 		flex-wrap: wrap;
 		background: rgba(0,0,0,.6);
 		padding: 1.7rem;
-		color: #f7f7f7;
+		color: var(--color-theme-off-white);
 
 
 		& #phoneIcon,
@@ -50,7 +50,7 @@
 
 			& a {
 				text-decoration: none;
-				color: #f7f7f7;
+				color: var(--color-theme-off-white);
 			}
 		}
 	}
@@ -125,7 +125,7 @@
 			font-size: 0.9rem;
 
 			& a {
-				color: #f7f7f7;
+				color: var(--color-theme-off-white);
 				text-decoration: none;
 			}
 		}
@@ -200,7 +200,7 @@
 			font-size: 0.9rem;
 
 			& a {
-				color: #f7f7f7;
+				color: var(--color-theme-off-white);
 				text-decoration: none;
 			}
 		}
@@ -213,7 +213,7 @@
 		flex-wrap: wrap;
 		background: rgba(0,0,0,.6);
 		padding: 1.7rem;
-		color: #f7f7f7;
+		color: var(--color-theme-off-white);
 
 		& #phoneIcon,
 		& #mapIcon,
@@ -229,7 +229,7 @@
 
 			& a {
 				text-decoration: none;
-				color: #f7f7f7;
+				color: var(--color-theme-off-white);
 			}
 		}
 	}
@@ -312,7 +312,7 @@
         flex-wrap: wrap;
         background: rgba(0,0,0,.6);
         padding: 1.7rem;
-		color: #f7f7f7;
+		color: var(--color-theme-off-white);
 		grid-template-columns: 1fr;
 		top: 5rem;
 		position: relative;
@@ -333,7 +333,7 @@
 
             & a {
 				text-decoration: none;
-				color: #f7f7f7;
+				color: var(--color-theme-off-white);
 			}
 		}
 

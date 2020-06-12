@@ -14,7 +14,7 @@
 
 namespace WP_Rig\WP_Rig;
 
-get_header('about');
+get_header('custom');
 
 wp_rig()->print_styles( 'wp-rig-content' );
 
@@ -24,4 +24,4 @@ wp_rig()->print_styles( 'wp-rig-content' );
 	<?php get_template_part( 'template-parts/content/contactBlock' ); ?>
 	</main><!-- #primary -->
 <?php
-get_footer();
+get_footer('contact');

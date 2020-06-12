@@ -24,10 +24,14 @@
 			}
 		}
 		& button {
-			background: linear-gradient(22deg,hsl(273, 49%, 33%), hsl(273, 49%, 33%), hsl(187, 76%, 48%), hsl(187, 76%, 48%), hsl(187, 76%, 48%));
+			background: var(--color-gradiant);
 		}
 	}
+	& .staffInfo {
+		color: var(--global-font-color);
+	}
 }
+
 
 
 	 .sectionCard {

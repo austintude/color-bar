@@ -19,7 +19,7 @@ section.covid19 {
 	padding: 3rem 0;
 
 	& button {
-		background: #008000;
+		background: var(--color-theme-black);
 		margin-bottom: 2rem;
 		max-width: 70vw;
 		margin-left: auto;
@@ -44,7 +44,7 @@ section.covid19 {
 
 		& .blockContent {
 			display: grid;
-			color: #F2C996;
+			color: var(--global-font-color);
 			@media (--content-query) {
 			grid-column: 2 / 4;
 			grid-row: 2 / 3;

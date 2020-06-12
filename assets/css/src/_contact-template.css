@@ -1,13 +1,132 @@
 .page-template-contact {
+	& main {
+		top: 2rem;
+		margin: 0;
+	}
+	& .topBlock {
+		display: flex;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: 0.5rem;
+		margin: 0 2rem 8rem;
+
+		@media (--content-query) {
+			grid-template-columns: 1fr 1fr 1fr;
+			margin: 0 5rem 8rem;
+		}
+
+	& .leftBlock {
+		display:flex;
+		display: grid;
+		grid-template-columns: 1fr;
+		text-align: left;
+
+	}
+
+	& .middleBlock,
+	& .rightBlock {
+		display: flex;
+    justify-content: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: .5rem;
+		& .blockTitle {
+			& h5 {
+				font-size: 1rem;
+				font-weight: 600;
+			}
+		}
+		& amp-img {
+			/* width: 100%; */
+			@media (--content-query) {
+				/* height: 10rem; */
+			}
+		}
+	}
+	& .blockImages {
+		display: flex;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: 1.5rem;
+		text-align: left;
+		padding-left: 2rem;
+		& amp-img {
+
+			/* width: 100%; */
+			@media (--content-query) {
+				/* height: 10rem; */
+			}
+			@media (--large-desktop-query) {
+				/* height: 100%; */
+			}
+		}
+		@media (--content-query) {
+			/* grid-template-columns: 1fr 1fr; */
+			/* max-height: 50rem; */
+			grid-gap: 0.5rem;
+		}
+		& amp-img.amp-wp-enforced-sizes[layout="intrinsic"] > img {
+			object-fit: cover;
+		}
+	}
+	& .rightBlock .blockImages amp-img {
+		/* height: 50rem; */
+	}
+
+	& .middleBlock .row2,
+	& .rightBlock .row2 {
+		display:flex;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	}
+}
+	& .site-info {
+		margin: 0;
+		font-size: 0.8rem;
+		padding: 0;
+		color: var(--color-theme-grey);
+		@media (--content-query) {
+		width: 100vw;
+		max-width: 100vw;
+		}
+		& a {
+			color: var(--global-font-color);
+			text-decoration: none;
+			text-shadow: 1px 1px 5px #fff;
+			font-size: 2rem;
+		}
+		& .builtBy a {
+			color: var(--color-theme-dark-grey);
+			font-size: 1rem;
+			font-family: var(--highlight-font-family);
+		}
+	}
+	& #businessSocial {
+		grid-gap: .1rem;
+		width: 50%;
+		display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+		& #businessSocial>#socialIcon1 {
+			width: 2rem;
+		}
+		& img {
+			margin: .3rem;
+			width: 19vw;
+			@media (--content-query) {
+			width: 6vw;
+		}
+	}
+	}
 
     & #ctaBlock {
         background: transparent;
         & a {
             text-decoration: none;
-            color: #fff;
+            color: var(--color-theme-white);
         }
         & a:hover {
-            color: #fff;
+            color:  var(--color-theme-white);
         }
 
 
