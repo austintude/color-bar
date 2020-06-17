@@ -120,6 +120,9 @@ $contact_us_phone			= get_field('contact_us_phone');
 </div>
 </div>
 <div class="rightBlock">
+<div class="blockTitle">
+		<h4>BRINGING "CITY MODERN" ... TO "A LITTLE SLICE OF HEAVEN"</h4>
+</div>
 <amp-iframe media="(min-width: 48em)"
 width="300" height="350" layout="responsive"
               sandbox="allow-scripts allow-same-origin allow-popups" frameborder="0"
@@ -129,16 +132,14 @@ width="300" height="350" layout="responsive"
              placeholder></amp-img>
   </amp-iframe>
   <amp-iframe media="(max-width: 47.8em)"
-width="300" height="500" layout="responsive"
+width="300" height="600" layout="responsive"
               sandbox="allow-scripts allow-same-origin allow-popups" frameborder="0"
               src="<?php echo $contact_us_form; ?>">
     <amp-img layout="fill"
              src="<?php echo $cta_loading_image['url']; ?>"
              placeholder></amp-img>
   </amp-iframe>
-<div class="blockTitle">
-		<h4>BRINGING "CITY MODERN" ... TO "A LITTLE SLICE OF HEAVEN"</h4>
-</div>
+
 <div class="blockImages">
 
 	<div id="businessSocial">

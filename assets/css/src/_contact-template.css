@@ -3,6 +3,39 @@
 		top: 2rem;
 		margin: 0;
 	}
+	& h4 {
+
+		text-transform: uppercase;
+		font-weight: 600;
+		font-size: 1rem;
+		color: var(--global-font-color);
+    font-family: var(--global-font-family);
+	}
+	& h5 ,
+	& li,
+	& a {
+		font-size: 1rem;
+		line-height: 1rem;
+		font-weight: 400;
+		text-decoration: none;
+		color: var(--global-font-color);
+    font-family: var(--global-font-family);
+	}
+
+	& ul {
+		margin-left: 0;
+		padding-inline-start: 0;
+		& li {
+			list-style: none;
+		}
+	}
+	& address {
+		font-style: normal;
+	}
+	& .blockTitle {
+		padding: 0.2rem 0;
+		text-align: left;
+	}
 	& .topBlock {
 		display: flex;
 		display: grid;
@@ -28,7 +61,98 @@
 		display: flex;
     justify-content: center;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 5rem 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: .5rem;
+		& .blockTitle {
+			& h5 {
+				font-size: 1rem;
+				font-weight: 600;
+			}
+		}
+		& amp-img {
+			/* width: 100%; */
+			@media (--content-query) {
+				/* height: 10rem; */
+			}
+		}
+	}
+
+	& .blockImages {
+		display: flex;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: 1.5rem;
+		text-align: left;
+		padding-left: 2rem;
+		& amp-img {
+
+			/* width: 100%; */
+			@media (--content-query) {
+				/* height: 10rem; */
+			}
+			@media (--large-desktop-query) {
+				/* height: 100%; */
+			}
+		}
+		@media (--content-query) {
+			/* grid-template-columns: 1fr 1fr; */
+			/* max-height: 50rem; */
+			grid-gap: 0.5rem;
+		}
+		& amp-img.amp-wp-enforced-sizes[layout="intrinsic"] > img {
+			object-fit: cover;
+		}
+	}
+	& .rightBlock .blockImages amp-img {
+		/* height: 50rem; */
+	}
+
+	& .middleBlock .row2,
+	& .rightBlock .row2 {
+		display:flex;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	}
+}
+
+	& .baseBlock {
+		background: var(--color-theme-off-white);
+		bottom: 0;
+		position: absolute;
+		width: 100vw;
+
+		& .builtBy {
+			width: 100vw;
+			/* background: rgba(0,0,0,.9); */
+		}
+	}
+	& .topBlock {
+		display: flex;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: 0.5rem;
+		margin: 0 2rem 8rem;
+
+		@media (--content-query) {
+			grid-template-columns: 1fr 1fr 1fr;
+			margin: 0 5rem 8rem;
+		}
+
+	& .leftBlock {
+		display:flex;
+		display: grid;
+		grid-template-columns: 1fr;
+		text-align: left;
+
+	}
+
+	& .middleBlock,
+	& .rightBlock {
+		display: flex;
+    justify-content: center;
+    display: grid;
+    grid-template-rows: 5rem 1fr;
     grid-template-columns: 1fr;
     grid-gap: .5rem;
 		& .blockTitle {
