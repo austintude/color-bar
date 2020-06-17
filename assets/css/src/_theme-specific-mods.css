@@ -759,7 +759,7 @@ justify-self: center;
 	@media (--content-query) {
 		display: block;
 	}
-	@media (--wide-screen-query) {
+	/* @media (--wide-screen-query) {
 		display: none;
-	}
+	} */
 }
