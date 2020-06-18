@@ -109,7 +109,8 @@
 			font-size: 4rem;
 			font-weight: 400;
 			/* border-bottom: solid 2px #333; */
-			width: fit-content;
+			width: auto;
+			font-family: var(--global-font-family);
 		}
 
         & h3,
