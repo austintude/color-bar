@@ -703,7 +703,10 @@ justify-self: center;
 		grid-gap: .1rem;
 		width: 50%;
 		display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+		grid-template-columns: 1fr 1fr 1fr;
+		/* @media (--content-query) {
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+		} */
 		& #businessSocial>#socialIcon1 {
 			width: 2rem;
 		}

@@ -143,7 +143,7 @@ width="300" height="600" layout="responsive"
 <div class="blockImages">
 
 	<div id="businessSocial">
-		<div id="socialIcon1">
+	<div id="socialIcon1">
 			<a href="<?php echo $facebook_link; ?>" rel="noopener"  target="_blank" aria-label="<?php echo $facebook_link; ?>">
 			<amp-img
 				src="<?php echo $facebook_icon['url']; ?>"
@@ -166,15 +166,46 @@ width="300" height="600" layout="responsive"
 </a>
 		</div>
 		<div id="socialIcon3">
-		<a href="<?php echo $linkedin_link; ?>" rel="noopener" target="_blank" aria-label="<?php echo $linkedin_link; ?>">
+		<a href="<?php echo $twitter_link; ?>" rel="noopener" target="_blank" aria-label="<?php echo $twitter_link; ?>">
 			<amp-img
-				src="<?php echo $linkedin_icon['url']; ?>"
+				src="<?php echo $twitter_icon['url']; ?>"
 				width="5"
 				height="5"
 				layout="responsive"
-				alt="<?php echo $linkedin_icon['alt']; ?>">
+				alt="<?php echo $twitter_icon['alt']; ?>">
 			</amp-img>
 </a>
+		</div>
+		<div id="socialIcon4">
+		<a href="<?php echo $yelp_link; ?>" rel="noopener" target="_blank" aria-label="<?php echo $yelp_link; ?>">
+			<amp-img
+				src="<?php echo $yelp_icon['url']; ?>"
+				width="5"
+				height="5"
+				layout="responsive"
+				alt="<?php echo $yelp_icon['alt']; ?>">
+			</amp-img>
+</a>
+		</div>
+		<div id="socialIcon5">
+		<a href="<?php echo $google_link; ?>" rel="noopener" target="_blank" aria-label="<?php echo $google_link; ?>">
+			<amp-img
+				src="<?php echo $google_icon['url']; ?>"
+				width="5"
+				height="5"
+				layout="responsive"
+				alt="<?php echo $google_icon['alt']; ?>">
+			</amp-img>
+</a>
+		</div>
+		<div id="socialIcon6">
+			<amp-img
+				src="<?php echo $hrc_icon['url']; ?>"
+				width="5"
+				height="3"
+				layout="responsive"
+				alt="<?php echo $hrc_icon['alt']; ?>">
+			</amp-img>
 		</div>
 </div>
 

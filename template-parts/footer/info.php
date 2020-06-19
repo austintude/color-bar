@@ -37,10 +37,15 @@ $contact_us_phone			= get_field('contact_us_phone');
 			$right_images			= get_field('right_images');
 			$facebook_link			= get_field('facebook_link');
 			$facebook_icon			= get_field('facebook_icon');
+			$yelp_icon			= get_field('yelp_icon');
+			$google_icon			= get_field('google_icon');
+			$twitter_icon			= get_field('twitter_icon');
+			$hrc_icon			= get_field('hrc_icon');
 			$instagram_link			= get_field('instagram_link');
+			$twitter_link			= get_field('twitter_link');
 			$instagram_icon		= get_field('instagram_icon');
-			$linkedin_icon			= get_field('linkedin_icon');
-			$linkedin_link			= get_field('linkedin_link');
+			$google_link			= get_field('google_link');
+			$yelp_link			= get_field('yelp_link');
 			$google_map			= get_field('google_map');
 			$station_identification			= get_field('station_identification');
 			$station_status			= get_field('station_status');
@@ -151,15 +156,46 @@ $contact_us_phone			= get_field('contact_us_phone');
 </a>
 		</div>
 		<div id="socialIcon3">
-		<a href="<?php echo $linkedin_link; ?>" rel="noopener" target="_blank" aria-label="<?php echo $linkedin_link; ?>">
+		<a href="<?php echo $twitter_link; ?>" rel="noopener" target="_blank" aria-label="<?php echo $twitter_link; ?>">
 			<amp-img
-				src="<?php echo $linkedin_icon['url']; ?>"
+				src="<?php echo $twitter_icon['url']; ?>"
 				width="5"
 				height="5"
 				layout="responsive"
-				alt="<?php echo $linkedin_icon['alt']; ?>">
+				alt="<?php echo $twitter_icon['alt']; ?>">
 			</amp-img>
 </a>
+		</div>
+		<div id="socialIcon4">
+		<a href="<?php echo $yelp_link; ?>" rel="noopener" target="_blank" aria-label="<?php echo $yelp_link; ?>">
+			<amp-img
+				src="<?php echo $yelp_icon['url']; ?>"
+				width="5"
+				height="5"
+				layout="responsive"
+				alt="<?php echo $yelp_icon['alt']; ?>">
+			</amp-img>
+</a>
+		</div>
+		<div id="socialIcon5">
+		<a href="<?php echo $google_link; ?>" rel="noopener" target="_blank" aria-label="<?php echo $google_link; ?>">
+			<amp-img
+				src="<?php echo $google_icon['url']; ?>"
+				width="5"
+				height="5"
+				layout="responsive"
+				alt="<?php echo $google_icon['alt']; ?>">
+			</amp-img>
+</a>
+		</div>
+		<div id="socialIcon6">
+			<amp-img
+				src="<?php echo $hrc_icon['url']; ?>"
+				width="5"
+				height="3"
+				layout="responsive"
+				alt="<?php echo $hrc_icon['alt']; ?>">
+			</amp-img>
 		</div>
 </div>
 
