@@ -1,10 +1,22 @@
 .specialsBlock {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	grid-template-columns: repeat(auto-fit,minmax(140px,300px));
 	grid-gap: .3rem;
 	margin-left: auto;
     margin-right: auto;
 	& .specialsCard img {
 		cursor: pointer;
 	}
+	& h3 {
+		font-family: var(--global-font-family);
+	}
+	& .ctaButton {
+		margin: auto;
+		background: var(--color-theme-button);
+	& a {
+		text-decoration: none;
+	font-weight: 700;
+	color: var(--color-theme-dark-grey);
+	}
+}
 	}

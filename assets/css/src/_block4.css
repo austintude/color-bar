@@ -3,10 +3,12 @@
 	flex-direction: column;
 	margin: 0;
 	text-align: center;
-	background: rgba(0,0,0,.95);
+	/* background: rgba(0,0,0,.95); */
 	padding: 2rem 0;
 	& h2 {
 		color: var(--global-font-color);
+		font-family: var(--global-font-family);
+		font-size: 3rem;
 	}
 	& .sectionCardsBlock {
 			/* grid-template-columns: repeat(auto-fit,minmax(90px,180px)); */

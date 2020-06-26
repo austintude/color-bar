@@ -192,7 +192,7 @@ $contact_us_phone			= get_field('contact_us_phone');
 			<amp-img
 				src="<?php echo $hrc_icon['url']; ?>"
 				width="5"
-				height="3"
+				height="5"
 				layout="responsive"
 				alt="<?php echo $hrc_icon['alt']; ?>">
 			</amp-img>

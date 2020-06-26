@@ -19,7 +19,7 @@
 		/* grid-template-rows: 1fr 1fr 1fr; */
 		& a {
 			text-decoration: none;
-			color: var(--color-theme-button);
+			color: var(--color-theme-deep-purple);
 			font-weight: 700;
 
 		}
@@ -70,15 +70,18 @@
 			}
 			& .gridCardItemLink {
 				border: 1px solid var(--color-theme-button);
-				background: var(--color-theme-off-white);
+				background: var(--color-theme-button);
 				display: none;
 				align-self: center;
+				& a {
+					color: var(--color-theme-black);
+				}
 			}
 			& .gridCardItemLink:hover {
 				color: var(--color-theme-white);
 				background: var(--color-theme-button);
 				& a {
-					color: var(--color-theme-white);
+					color: var(--color-theme-grey);
 				}
 			}
 

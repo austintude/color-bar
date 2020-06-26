@@ -22,7 +22,15 @@ if ( is_home() ) {
 
 
 	<main id="primary" class="site-main">
-	<?php $miscblockloop = new \WP_Query( array( 'post_type' => 'miscblockloop', 'orderby' => 'post_id', 'order' => 'ASC' ) ); ?>
+	<?php $specialloop = new \WP_Query( array( 'post_type' => 'specials', 'orderby' => 'post_id', 'order' => 'ASC' ) );
+ $specialloop->the_post();
+$special_title	= get_field('special_title');
+?>
+<?php if( $special_title ): ?>
+	<?php
+			get_template_part( 'template-parts/content/block4' );
+		?>
+		<?php endif; ?>
 	<?php
 			get_template_part( 'template-parts/content/block2' );
 		?>
