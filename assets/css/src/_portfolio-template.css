@@ -17,8 +17,9 @@
                     text-align: center;
                     padding: 0 1rem;
                     font-size: 1.3rem;
-                    text-transform: uppercase;
-                }           
+					text-transform: uppercase;
+					font-family: var(--global-font-family);
+                }
             }
         }
         & a {
@@ -29,12 +30,12 @@
             color:#fff;
         }
     }
-    
+
     & #amp-lightbox-gallery {
         font-size: 2rem;
         margin-top: -3rem;
     }
-    
+
     & main {
         padding-top: 4rem;
     }

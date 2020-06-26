@@ -25,22 +25,20 @@ $gallery_instagram_shortcode = get_sub_field('gallery_instagram_shortcode');
 
 <div id="gallery-<?php echo $gallery_instagram_shortcode; ?>" class="galleryItem">
 <?php if ($gallery_instagram_shortcode != null) { ?>
-  <amp-instagram lightbox="<?php echo $gallery_category_title; ?>" 
+  <amp-instagram lightbox="<?php echo $gallery_category_title; ?>"
 amp-lightbox-group="<?php echo $gallery_category_title; ?>" data-shortcode="<?php echo $gallery_instagram_shortcode; ?>" width="1" height="1" layout="responsive">
 <div hidden id="<?php echo $gallery_category_id; ?>">
         <?php echo $gallery_category_image_caption; ?>
 </div>
 </amp-instagram>
   <?php } else { ?>
-<amp-img 
-lightbox="<?php echo $gallery_category_title; ?>" 
-amp-lightbox-group="<?php echo $gallery_category_title; ?>" 
-src="<?php echo $gallery_category_image['url']; ?>" 
-width="300" 
-height="400" 
+<img
+lightbox="<?php echo $gallery_category_title; ?>"
+amp-lightbox-group="<?php echo $gallery_category_title; ?>"
+src="<?php echo $gallery_category_image['url']; ?>"
 layout="responsive"
 aria-describedby="<?php echo $gallery_category_id; ?>">
-      </amp-img>
+
       <div hidden id="<?php echo $gallery_category_id; ?>">
         <?php echo $gallery_category_image_caption; ?>
 </div>

@@ -1,53 +1,33 @@
-.page-template-product-line.has-sidebar {
-	& .site-header {
-		margin-top: 4rem;
-	}
-	& .site {
-		grid-template-columns: 1fr;
-		background: rgba(0,0,0,.95);
-		& .site-main {
-			@media (--wide-menu-query) {
-		margin: auto;
-			}
-		}
-	}
-}
-.page-template-product-line {
+.page-template-gallery {
     & .galleryBlocks {
-        display: flex;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-        grid-gap: 1rem;
-        grid-template-rows: repeat(2, 435px);
-        margin: 0 5vw;
+        margin: 8rem 5rem;
+    display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-rows: repeat(2, 460px);
+  grid-gap: 1rem;
+  grid-auto-flow: dense;
 
-        & .galleryItem {
+  & div:nth-child(5n) {
+    grid-column: span 2; /* Spans two columns */
+    grid-row: span 2; /* Spans two rows */
+  }
 
-            & .categoryTitle {
-                background: #fff;
-                padding: 1rem 0;
+  & div:nth-child(9n) {
+    grid-column: span 3;
+    grid-row: span 3;
+  }
+}
 
-                & h3 {
-                    text-align: center;
-                }
-            }
+    & .galleryBlocks {
+        & .portfolioContent {
+            color:#fff;
         }
     }
-    & #amp-lightbox-gallery {
-        font-size: 2rem;
-        margin-top: -3rem;
-    }
 
-    & main {
-        padding-top: 4rem;
-    }
     @media (--narrow-portrait-menu-query) {
         & .galleryBlocks {
-            margin: 0;
-        }
-        & #carouselHero,
-        & #carouselHero amp-img {
-            top: -4rem;
+            margin: 7rem .5rem;
+            grid-gap: 6vw;
         }
     }
 }

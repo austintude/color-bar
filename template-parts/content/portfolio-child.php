@@ -10,7 +10,7 @@ $gallery_images	= get_field('gallery_images');
 
 ?>
 <div class="galleryBlocks">
-    <amp-carousel height="300" 
+    <amp-carousel height="300"
 		width="1200"
 		layout="responsive"
 		type="slides"
@@ -18,7 +18,7 @@ $gallery_images	= get_field('gallery_images');
         delay="5500"
         media="(max-width: 48.5em) and (max-height:29em)"
         >
-        
+
 <?php while (have_rows('gallery_images')) : the_row();
 
 // vars
@@ -39,7 +39,7 @@ aria-describedby="<?php echo $gallery_category_id; ?>">
 </div>
 </div>
 <!-- <div hidden> -->
-	
+
 		<?php while (have_rows('gallery_category')) : the_row();
 
 // vars
@@ -50,9 +50,9 @@ $gallery_image_caption_id = get_sub_field('gallery_image_caption_id');
 $gallery_image_layout = get_sub_field('gallery_image_layout');
 
 ?>
-	
+
 <div>
-		<amp-img 
+		<amp-img
   src="<?php echo $gallery_image_ipad_landscape_plus['url']; ?>"
   <?php echo $gallery_image_layout; ?>
 
@@ -65,16 +65,16 @@ $gallery_image_layout = get_sub_field('gallery_image_layout');
         <div hidden id="<?php echo $gallery_image_caption_id; ?>">
         <?php echo $gallery_image_caption; ?>
 </div>
-</div> 
-		
-	
+</div>
+
+
 	<?php endwhile; ?>
 <!-- </div> -->
 <!-- close hidden div -->
 
 <?php endwhile; ?>
 </amp-carousel>
-<amp-carousel height="480" 
+<amp-carousel height="480"
 		width="378"
 		layout="responsive"
 		type="slides"
@@ -82,7 +82,7 @@ $gallery_image_layout = get_sub_field('gallery_image_layout');
         delay="5500"
         media="(max-width: 48.5em) and (min-height:29.1em)"
         >
-             
+
 <?php while (have_rows('gallery_images')) : the_row();
 
 // vars
@@ -95,8 +95,8 @@ $gallery_category_content = get_sub_field('gallery_category_content');
 ?>
 
 <div id="gallery-<?php echo $gallery_category_id; ?>" class="galleryItem">
-<amp-img lightbox="<?php echo $gallery_category_id; ?>" 
-amp-lightbox-group="<?php echo $gallery_category_id; ?>" 
+<amp-img lightbox="<?php echo $gallery_category_id; ?>"
+amp-lightbox-group="<?php echo $gallery_category_id; ?>"
 src="<?php echo $gallery_category_image['url']; ?>" width="300" height="200" layout="responsive"
 aria-describedby="<?php echo $gallery_category_id; ?>">
       </amp-img>
@@ -105,7 +105,7 @@ aria-describedby="<?php echo $gallery_category_id; ?>">
 </div>
 </div>
 <!-- <div hidden> -->
-	
+
 		<?php while (have_rows('gallery_category')) : the_row();
 
 // vars
@@ -116,9 +116,9 @@ $gallery_image_caption_id = get_sub_field('gallery_image_caption_id');
 $gallery_image_layout = get_sub_field('gallery_image_layout');
 
 ?>
-	
+
 <div>
-		<amp-img 
+		<amp-img
   src="<?php echo $gallery_image_ipad_landscape_plus['url']; ?>"
   <?php echo $gallery_image_layout; ?>
 
@@ -131,16 +131,16 @@ $gallery_image_layout = get_sub_field('gallery_image_layout');
         <div hidden id="<?php echo $gallery_image_caption_id; ?>">
         <?php echo $gallery_image_caption; ?>
 </div>
-</div> 
-		
-	
+</div>
+
+
 	<?php endwhile; ?>
 <!-- </div> -->
 <!-- close hidden div -->
 
 <?php endwhile; ?>
 </amp-carousel>
-        <amp-carousel height="600" 
+        <amp-carousel height="600"
 		width="1200"
 		layout="responsive"
 		type="slides"
@@ -148,7 +148,7 @@ $gallery_image_layout = get_sub_field('gallery_image_layout');
         delay="5500"
         media="(min-width: 48.6em)"
         >
-             
+
 <?php while (have_rows('gallery_images')) : the_row();
 
 // vars
@@ -169,7 +169,7 @@ aria-describedby="<?php echo $gallery_category_id; ?>">
 </div>
 </div>
 <!-- <div hidden> -->
-	
+
 		<?php while (have_rows('gallery_category')) : the_row();
 
 // vars
@@ -179,9 +179,9 @@ $gallery_image_caption = get_sub_field('gallery_image_caption');
 $gallery_image_caption_id = get_sub_field('gallery_image_caption_id');
 $gallery_image_layout = get_sub_field('gallery_image_layout');
 ?>
-	
+
 <div>
-		<amp-img 
+		<amp-img
   src="<?php echo $gallery_image_ipad_landscape_plus['url']; ?>"
   <?php echo $gallery_image_layout; ?>
 			layout="responsive"
@@ -193,9 +193,9 @@ $gallery_image_layout = get_sub_field('gallery_image_layout');
         <div hidden id="<?php echo $gallery_image_caption_id; ?>">
         <?php echo $gallery_image_caption; ?>
 </div>
-</div> 
-		
-	
+</div>
+
+
 	<?php endwhile; ?>
 <!-- </div> -->
 <!-- close hidden div -->
