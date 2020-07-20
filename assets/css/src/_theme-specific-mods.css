@@ -190,7 +190,8 @@ section {
 	& a,
 	& a:hover,
 	& a:visited {
-		color: var(--color-theme-deep-purple);
+		color: var(--color-theme-yellow);
+    text-shadow: 1px 1px var(--color-theme-dark-grey);
 		text-decoration: none;
 		letter-spacing: .3rem;
 	}

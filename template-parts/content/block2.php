@@ -9,7 +9,6 @@ namespace WP_Rig\WP_Rig;
 
 ?>
 <section class="block2">
-	<h2>Under Construction</h2>
 	<?php $sloganloop = new \WP_Query( array( 'post_type' => 'slogan', 'orderby' => 'post_id', 'order' => 'ASC' ) ); ?>
 
 <?php while( $sloganloop->have_posts() ) : $sloganloop->the_post();

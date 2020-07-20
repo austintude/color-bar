@@ -51,21 +51,21 @@ if ( ! wp_rig()->is_primary_nav_menu_active() ) {
 
 	<div class="primary-menu-container">
 		<?php wp_rig()->display_primary_nav_menu( [ 'menu_id' => 'primary-menu' ] ); ?>
-		<?php $listenliveloop = new \WP_Query( array( 'post_type' => 'listen_live', 'orderby' => 'post_id', 'order' => 'ASC' ) ); ?>
+		<?php $listenliveloop = new \WP_Query( array( 'post_type' => 'contact_data', 'orderby' => 'post_id', 'order' => 'ASC' ) ); ?>
 
 <?php while( $listenliveloop->have_posts() ) : $listenliveloop->the_post();
-$listen_live_tx			= get_field('listen_live_tx');
-$listen_live_link			= get_field('listen_live_link');
+$contact_data_tx			= get_field('contact_data_tx');
+$contact_data_link			= get_field('contact_data_link');
 
 			?>
 
 	<div class="liveLink">
 
-		<a href="<?php echo $listen_live_link; ?>" target="_blank" rel="noreferrer">
+		<a href="<?php echo $contact_data_link; ?>" target="_blank" rel="noreferrer">
 		<span>
-		<?php echo $listen_live_tx; ?>
+		<?php echo $contact_data_tx; ?>
 		</span>
-		<img src="<?php echo $listen_live_icon['url']; ?>" alt="<?php echo $listen_live_icon['alt']; ?>"/>
+		<img src="<?php echo $contact_data_icon['url']; ?>" alt="<?php echo $contact_data_icon['alt']; ?>"/>
 	</a>
 	</div> <!-- liveLink -->
 	<?php endwhile;  wp_reset_query(); ?>

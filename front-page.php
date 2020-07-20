@@ -22,6 +22,9 @@ if ( is_home() ) {
 
 
 	<main id="primary" class="site-main">
+	<?php
+			get_template_part( 'template-parts/content/blocka' );
+		?>
 	<?php $specialloop = new \WP_Query( array( 'post_type' => 'specials', 'orderby' => 'post_id', 'order' => 'ASC' ) );
  $specialloop->the_post();
 $special_title	= get_field('special_title');

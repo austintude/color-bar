@@ -16,7 +16,8 @@
 	& a {
 		text-decoration: none;
 	font-weight: 700;
-	color: var(--color-theme-dark-grey);
+	color: var(--color-theme-yellow);
+    text-shadow: 1px 1px var(--color-theme-dark-grey);
 	}
 }
 	}
